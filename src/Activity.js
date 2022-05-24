@@ -1,8 +1,12 @@
-export const Activity = ({title, body}) => {
+export const Activity = ({activity}) => {
+
     return (
-        <li>
-            <p>{title}</p>
-            <small>{body}</small>
-        </li>
+        <tr>
+            <td> <a href="http://localhost:3000">{activity.id}</a> </td>
+            <td> {activity.name} </td>
+            <td> {activity.faculty}</td>
+            <td> {activity.date}</td>
+            <td> 10 per.</td>
+        </tr>
     );
 };

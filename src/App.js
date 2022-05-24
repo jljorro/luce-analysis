@@ -1,33 +1,23 @@
 import './App.css';
 
-import { useState, useEffect } from 'react';
-import { Activity } from './Activity';
-import {
+//import { useState } from 'react';
+//import { Activity } from './Activity';
+import ActivityTable from './components/ActivityTable'
+/*import {
   create as createActivity, 
-  getAll as getAllActivities } from './services/activitiesSrv'
+} from './services/activitiesSrv'*/
+import { Container, Nav, Navbar, Row, Form, Button } from 'react-bootstrap';
 
 
 export default function App() {
-  const [activities, setActivities] = useState([])
-  const [newActivity, setNewActivity] = useState("")
-  const [loading, setLoading] = useState(true)
+  //const [activities, setActivities] = useState([])
+  //const [newActivity, setNewActivity] = useState("")
 
-  useEffect(() => {
-    console.log("useEffect")
-    setLoading(true)
-
-    getAllActivities()
-    .then(activities => {
-      setActivities(activities)
-      setLoading(false)
-    })
-  }, [])
-
-  const handleChange = (event) => {
+  /*const handleChange = (event) => {
     setNewActivity(event.target.value)
-  }
+  }*/
 
-  const handleSubmit = (event) => {
+  /*const handleSubmit = (event) => {
     event.preventDefault()
 
     const activityAddToState = {
@@ -42,28 +32,54 @@ export default function App() {
     })
 
     setNewActivity("")
-  }
+  }*/
 
   return (
-    <div>
-      <h1>Actividades</h1>
-      <p>{
-        loading
-          ? "Cargando..."
-          : ""
-      }</p>
-      <ol>
-        {activities
-          .map(activity => (
-            <Activity key={activity.id} {...activity} />
-          ))}
-      </ol>
+    <>
+      <Navbar bg="light">
+        <Container>
+          <Navbar.Brand>LUCE-Analysis</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link>Actividades</Nav.Link>
+            <Nav.Link>Grafo</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
 
-      <form onSubmit={handleSubmit}>
+      <Container>
+        <Row>
+          <h1>Actividades</h1>
+        </Row>
+
+        <Row>
+          <Form column="true">
+            <h3>Buscar actividades</h3>
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Nombre</Form.Label>
+              <Form.Control type="text" placeholder="Nombre de la actividad"/>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>Facultad</Form.Label>
+              <Form.Control type="text" placeholder="Nombre de la facultad"/>
+            </Form.Group>
+            <br></br>
+            <Button variant="primary" type="submit">Buscar</Button>
+            <Button variant="secondary" type="button"> Limpiar</Button>
+          </Form>
+        </Row>
+
+        <br></br>
+        <Row>
+          <ActivityTable />
+        </Row>
+        
+      </Container>
+
+      {/* <form onSubmit={handleSubmit}>
         <input type='text' onChange={handleChange} value={newActivity}/>
         <button>Crear actividad</button>
-      </form>
-
-    </div>
+      </form> */}
+   </>
   );
+
 }
