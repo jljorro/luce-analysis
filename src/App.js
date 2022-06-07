@@ -63,7 +63,7 @@ export default function App() {
               <Form.Control type="text" placeholder="Nombre de la facultad"/>
             </Form.Group>
             <br></br>
-            <Button variant="primary" type="submit">Buscar</Button>
+            <Button variant="primary" type="submit" >Buscar</Button>
             <Button variant="secondary" type="button"> Limpiar</Button>
           </Form>
         </Row>

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getAll as getAllActivities} from "../services/activitiesSrv"
 
 import { Activity } from "../Activity";
 
@@ -14,12 +13,13 @@ export default function ActivityTable() {
     useEffect(() => {
         console.log("useEffect")
         setLoading(true)
-    
-        getAllActivities()
-        .then(activities => {
-          setActivities(activities)
-          console.log(activities)
-          setLoading(false)
+
+        fetch("./data/activities.json")
+        .then(response => response.json())
+        .then(json => {
+            setActivities(json)
+            console.log(json)
+            setLoading(false)
         })
       }, [])
 
@@ -40,6 +40,7 @@ export default function ActivityTable() {
                         <th>Nombre</th>
                         <th>Facultad</th>
                         <th>Comienzo</th>
+                        <th>Categoría</th>
                         <th>Participación</th>
                         <th></th>
                     </tr>
@@ -48,7 +49,7 @@ export default function ActivityTable() {
             {activities
                 .map(activity => (
                     <Activity
-                        key = {activity.id}  
+                        key = {activity.CD_ACTIVITY}  
                         activity = {activity} />
             ))}
                 

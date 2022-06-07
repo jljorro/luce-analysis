@@ -11,9 +11,13 @@ export const create = (activityAddToState) => {
 }
 
 export const getAll = () => {
-    return axios.get(`${URI_LUCE_API}/activities`)
-    .then((response) => {
-      const {data} = response 
-      return data
-    })
+  fetch("./data/activities.json", {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    }
+  }).then(function (response) {
+    console.log(response)
+    return response.json()
+  })
 }
