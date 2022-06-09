@@ -1,8 +1,10 @@
-export const Activity = ({activity}) => {
+import { Link } from "react-router-dom";
+
+export const ActivityRow = ({activity}) => {
 
     return (
         <tr>
-            <td> <a href="http://localhost:3000">{activity.CD_ACTIVITY}</a> </td>
+            <td> <Link to="/activity">{activity.CD_ACTIVITY}</Link> </td>
             <td> {activity.DS_TITLE} </td>
             <td> {activity.CD_FACULTY}</td>
             <td> {activity.DS_INIT_DATE}</td>

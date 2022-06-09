@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import { Activity } from "../Activity";
+import { ActivityRow } from "./ActivityRow";
 
 import { Table, Spinner } from "react-bootstrap";
 
@@ -48,7 +48,7 @@ export default function ActivityTable() {
             <tbody>
             {activities
                 .map(activity => (
-                    <Activity
+                    <ActivityRow
                         key = {activity.CD_ACTIVITY}  
                         activity = {activity} />
             ))}
