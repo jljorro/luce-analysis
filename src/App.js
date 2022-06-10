@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ActivitiesPage from './components/ActivitiesPage';
 import ActivityDetail from './components/ActivityDetail';
 import LuceGraph from './components/LuceGraph';
+import GraphPage from './components/GraphPage';
 
 export default function App() {
 
@@ -32,7 +33,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ActivitiesPage/>}></Route>
         <Route path="/activity" element={<ActivityDetail/>}></Route>
-        <Route path="/graph" element={<LuceGraph />}></Route>
+        <Route path="/graph" element={<GraphPage />}></Route>
       </Routes>
    </BrowserRouter>
   );

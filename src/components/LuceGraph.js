@@ -2,57 +2,21 @@ import Graph from "graphology";
 import { SigmaContainer } from "@react-sigma/core";
 import "@react-sigma/core/lib/react-sigma.min.css";
 
+//import { Table, Spinner } from "react-bootstrap";
+
 // import de los datos del grafo en formato json
 import conexiones from '../data/Grafo.json';
 import actividades from '../data/Actividades.json';
 
 // ejemplo basico: ejemplo sacado de este enlace: https://sim51.github.io/react-sigma/docs/example
 
-/*function searchData(code, activities){
-    var data = "";
-    for(var i = 0; i < activities.length; i++){
-        if(activities[i]["CD_ACTIVITY"] === code){
-            data = activities[i];
-        }
-        else{
-            i++;
-        }
-    }
-
-    return data;
-}
-
-function addNodeList(activity, nodes_data){
-    //if (nodes_list.includes(my_graph_elem[target]) === false){
-        //nodes_data.push(searchData(my_graph_elem[target], activities));
-        nodes_data.push(activity);
-   // } else {
-    //    console.log("The node is already in the list");
-     //   console.log(nodes_list);
-//console.log(my_graph_elem[target]);
-    //}
-}
-
-function getNodes(activities){
-    //console.log(my_graph);
-    //var nodes_list = [];
-    var nodes_data = [];
-    for(var i = 0; i < activities.length; i++){
-        //addNodeList(my_graph[i], activities, nodes_list, nodes_data, 'A');
-        //addNodeList(my_graph[i], activities, nodes_list, nodes_data, 'B');
-        addNodeList(activities[i], nodes_data);
-    }
-
-    return nodes_data;
-}*/
-
 const Colors = Object.freeze({
-    politics_RED: "#FA4F40",
-    art_GREEN: "#00cc00",
-    sport_YELLOW: "#ffff00",
-    music_BLUE: "#0000ff",
-    voluntary_PURPLE: "#6600ff",
-    other_BROWN: "#A04000"
+    talleres_RED: "#FB6542",
+    art_GREEN: "#3F681C",
+    sport_YELLOW: "#FFBB00",
+    music_BLUE: "#375E97",
+    voluntary_PURPLE: "#C787CD",
+    ocio_TURQUOISE: "#87CDB2"
   });
 
 function selectColour(category){
@@ -67,8 +31,10 @@ function selectColour(category){
         color = Colors.music_BLUE;
     } else if (category === "Politica"){
         color = Colors.politics_RED;
-    } else if (category === "Otros"){
-        color = Colors.other_BROWN;
+    } else if (category === "Ocio"){
+        color = Colors.ocio_TURQUOISE;
+    } else if (category === "Talleres"){
+        color = Colors.talleres_RED;
     }
 
     return color;
@@ -105,7 +71,6 @@ function createEdges(my_graph, connections){
 }
 
 
-
 export default function LuceGraph() {
     
     const graph = new Graph();
@@ -118,11 +83,9 @@ export default function LuceGraph() {
     // the size of the nodes: the number of participants
     // label of the link: number of participants en common
 
-
-
     
-    // height: "500px", width: "1500px"
-    return <SigmaContainer style={{ height: "90vh", width: "200vh" }} graph={graph}>
+    // style={{ height: "90vh", width: "200vh" }}
+    return <SigmaContainer  style={{ height: "90vh", width: "150vh" }} graph={graph}>
         </SigmaContainer>;
 
 }

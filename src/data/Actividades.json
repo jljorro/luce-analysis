@@ -2376,14 +2376,14 @@
         ]
     },
     {
-        "CD_ACTIVITY": "OTR04",
+        "CD_ACTIVITY": "TALL04",
         "DS_TITLE": "Mendeley: Referencias bibliograficas",
         "DS_ABSTRACT": "En esta actividiad se presentara  Mendeley: Referencias bibliograficastratando de acercar a los estudiantes a este tema tan desconocido para muchos de ellos. El aforo es limitado para tratar de que la experiencia lo mas grata para todos.",
         "DS_INIT_DATE": "09/05/2021 02:17 PM",
         "DS_END_DATE": "09/05/2021 3:17 PM",
         "CD_ASSOCIATION": "Librelab",
         "CD_FACULTY": "Informatica",
-        "Categoria": "Otros",
+        "Categoria": "Talleres",
         "Estudiantes": [
             {
                 "index": 551,
@@ -3012,14 +3012,14 @@
         ]
     },
     {
-        "CD_ACTIVITY": "OTR05",
+        "CD_ACTIVITY": "TALL05",
         "DS_TITLE": "Zotero: Referencias bibliograficas",
         "DS_ABSTRACT": "En esta actividiad se presentara  Zotero: Referencias bibliograficastratando de acercar a los estudiantes a este tema tan desconocido para muchos de ellos. El aforo es limitado para tratar de que la experiencia lo mas grata para todos.",
         "DS_INIT_DATE": "04/22/2022 09:05 PM",
         "DS_END_DATE": "04/22/2022 10:05 PM",
         "CD_ASSOCIATION": "Discovolo",
         "CD_FACULTY": "Informatica",
-        "Categoria": "Otros",
+        "Categoria": "Talleres",
         "Estudiantes": [
             {
                 "index": 1078,
@@ -3843,14 +3843,14 @@
         ]
     },
     {
-        "CD_ACTIVITY": "OTR06",
+        "CD_ACTIVITY": "OCIO06",
         "DS_TITLE": "Torneo de Mus",
         "DS_ABSTRACT": "En esta actividiad se presentara  Torneo de Mustratando de acercar a los estudiantes a este tema tan desconocido para muchos de ellos. El aforo es limitado para tratar de que la experiencia lo mas grata para todos.",
         "DS_INIT_DATE": "11/01/2021 08:10 AM",
         "DS_END_DATE": "11/01/2021 9:10 AM",
         "CD_ASSOCIATION": "Discovolo",
         "CD_FACULTY": "Informatica",
-        "Categoria": "Otros",
+        "Categoria": "Ocio",
         "Estudiantes": [
             {
                 "index": 14,
@@ -5817,14 +5817,14 @@
         ]
     },
     {
-        "CD_ACTIVITY": "OTR08",
+        "CD_ACTIVITY": "TALL08",
         "DS_TITLE": "Desafio de ciberseguridad",
         "DS_ABSTRACT": "En esta actividiad se presentara  Desafio de ciberseguridadtratando de acercar a los estudiantes a este tema tan desconocido para muchos de ellos. El aforo es limitado para tratar de que la experiencia lo mas grata para todos.",
         "DS_INIT_DATE": "10/16/2021 04:13 PM",
         "DS_END_DATE": "10/16/2021 5:13 PM",
         "CD_ASSOCIATION": "ASCI",
         "CD_FACULTY": "Informatica",
-        "Categoria": "Otros",
+        "Categoria": "Talleres",
         "Estudiantes": [
             {
                 "index": 966,
