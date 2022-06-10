@@ -13,7 +13,15 @@ export default function App() {
     <BrowserRouter>
       <Navbar bg="light">
         <Container>
-          <Navbar.Brand>LUCE-Analysis</Navbar.Brand>
+         
+          <Navbar.Brand>
+          <img
+            src="/logo.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="LUCE logo"
+          />{' '}LUCE-Analysis</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/" >Actividades</Nav.Link>
             <Nav.Link href="/graph">Grafo</Nav.Link>
