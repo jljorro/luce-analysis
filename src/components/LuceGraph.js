@@ -16,7 +16,8 @@ const Colors = Object.freeze({
     sport_YELLOW: "#FFBB00",
     music_BLUE: "#375E97",
     voluntary_PURPLE: "#C787CD",
-    ocio_TURQUOISE: "#87CDB2"
+    ocio_TURQUOISE: "#87CDB2",
+    politics_PINK: "#FF2CFC"
   });
 
 function selectColour(category){
@@ -30,7 +31,7 @@ function selectColour(category){
     } else if (category === "Musical"){
         color = Colors.music_BLUE;
     } else if (category === "Politica"){
-        color = Colors.politics_RED;
+        color = Colors.politics_PINK;
     } else if (category === "Ocio"){
         color = Colors.ocio_TURQUOISE;
     } else if (category === "Talleres"){
