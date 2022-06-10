@@ -17,7 +17,7 @@ export default function ActivityDetail () {
             textposition: "outside",
             automargin: true,
             marker: {
-                colors: ['#025159','#F2DA5E']
+                colors: ['#F29F05','#038C73']
             }
         }]
 
