@@ -15,3 +15,8 @@ code {
 button {
   margin-left: 1px;
 }
+
+/* Estilos LUCE */
+#col-activity {
+  padding: 2rem 4rem;
+}
