@@ -43,8 +43,8 @@ export default function GraphPage() {
                                 <th>Ocio</th>
                             </tr>
                             <tr>
-                                <th>Talleres</th>
                                 <th>Rojo</th>
+                                <th>Talleres</th>
                             </tr>
                         </thead>
                     </Table>
