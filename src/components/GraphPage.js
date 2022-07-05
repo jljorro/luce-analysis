@@ -35,8 +35,8 @@ export default function GraphPage() {
                                 <th>Musical</th>
                             </tr>
                             <tr>
-                                <th>Política</th>
                                 <th>Rosa</th>
+                                <th>Política</th>
                             </tr>
                             <tr>
                                 <th>Ocio</th>
